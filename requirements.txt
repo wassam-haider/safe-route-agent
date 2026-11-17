@@ -1,0 +1,11 @@
+langchain>=1.2,<2
+langchain-openrouter
+langchain-tavily
+fastapi
+uvicorn[standard]
+httpx
+pydantic>=2
+pandas
+python-dotenv
+polyline
+tzdata

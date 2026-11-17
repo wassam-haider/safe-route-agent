@@ -1,0 +1,10 @@
+run this 
+cd saferoute-agent
+uv venv --python 3.12
+.venv\Scripts\Activate.ps1
+uv pip install -r requirements.txt
+# put the Kaggle CSV at data/karachi_crime.csv, fill .env, then:
+python scripts/build_area_centroids.py     # one-time, geocodes crime areas
+uvicorn app.main:app --reload --port 8000  # open http://127.0.0.1:8000
+# or terminal chat:
+python run_cli.pycl

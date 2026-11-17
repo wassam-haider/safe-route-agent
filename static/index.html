@@ -1,0 +1,79 @@
+<!-- <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SafeRoute Agent</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <h1>SafeRoute</h1>
+    <span>Karachi safest-route agent</span>
+    <button id="reset">New trip</button>
+  </header>
+  <main>
+    <section id="chat">
+      <div id="log"></div>
+      <div id="composer">
+        <input id="msg" autocomplete="off" placeholder="e.g. From MAJU Block C to Hyderi Bhayani Garden by motorcycle">
+        <button id="send">Send</button>
+      </div>
+    </section>
+    <section id="side">
+      <div id="map"></div>
+      <div id="result"></div>
+    </section>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html> -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SafeRoute Agent</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="app">
+    <section class="map-pane" aria-label="Route map">
+      <div id="map"></div>
+      <aside id="legend" hidden aria-label="Route options"></aside>
+    </section>
+
+    <section class="chat-pane" aria-label="SafeRoute Agent chat">
+      <header class="chat-head">
+        <div class="title">
+          <h1>SafeRoute Agent Chat</h1>
+          <p>Safest route planner for Karachi</p>
+        </div>
+        <button id="reset" type="button">New trip</button>
+        <div class="avatar" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+        </div>
+      </header>
+
+      <div id="log" aria-live="polite"></div>
+
+      <div id="composer">
+        <input id="msg" autocomplete="off" placeholder="e.g. From MAJU Block C to Hyderi Bhayani Garden by motorcycle">
+        <button id="mic" type="button" aria-label="Speak your trip" hidden>
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
+        </button>
+        <button id="send" type="button">Send</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html> 
